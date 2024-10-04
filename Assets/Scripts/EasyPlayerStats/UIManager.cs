@@ -33,7 +33,7 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         // Find the Player object in the scene and get its Player script
-        player = FindObjectOfType<Player>();
+        player = Object.FindFirstObjectByType<Player>(); //FindObjectOfType<Player>();
 
         if (player != null)
         {
